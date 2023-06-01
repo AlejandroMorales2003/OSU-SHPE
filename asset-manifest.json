@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OSU-SHPE/static/css/main.0f955fe4.css",
+    "main.js": "/OSU-SHPE/static/js/main.4cfcb99c.js",
+    "index.html": "/OSU-SHPE/index.html",
+    "main.0f955fe4.css.map": "/OSU-SHPE/static/css/main.0f955fe4.css.map",
+    "main.4cfcb99c.js.map": "/OSU-SHPE/static/js/main.4cfcb99c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f955fe4.css",
+    "static/js/main.4cfcb99c.js"
+  ]
+}
