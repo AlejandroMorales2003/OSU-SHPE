@@ -97,13 +97,29 @@ export const Members2 = [
     }
 ]
 
-export const Events = [
+export const EventImages = [
     {
         id: 1,
-        img: "/images/buddy.png",
-        name: "Dennise Alvarado",
-        pos: "President",
-        major: "Computer Science",
-        linkedin: "quien sabe"
+        img: "/OSU-SHPE/images/gala.png"
+    },
+    {
+        id: 2,
+        img: "/OSU-SHPE/images/bowlingEve.png"
+    },
+    {
+        id: 3,
+        img: "/OSU-SHPE/images/gradschool.png"
+    },
+    {
+        id: 4,
+        img: "/OSU-SHPE/images/shpegiving.png"
+    },
+    {
+        id: 5,
+        img: "/OSU-SHPE/images/deacon.png"
+    },
+    {
+        id: 6,
+        img: "/OSU-SHPE/images/studysesh.png"
     },
 ]
