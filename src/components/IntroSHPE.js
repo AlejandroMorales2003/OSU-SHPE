@@ -172,7 +172,9 @@ function IntroSHPE () {
         console.log("stop!")
     }
 
-
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
 
     return (
         <Slider>
@@ -182,36 +184,36 @@ function IntroSHPE () {
 
             <Slides slideIndex={slideIndex}>
                 <Slide>
-                    <SlideImage src="/images/osucampus2.jpeg"/>
+                    <SlideImage src="/OSU-SHPE/images/osucampus2.jpeg"/>
 
                     <SlideContainer>
                         <SlideTitle active={2 === slideIndex}>OREGON STATE UNIVERSITY SHPE</SlideTitle>
-                        <OSUlogo src="/images/beavs2.png" active={2 === slideIndex}/>
+                        <OSUlogo src="/OSU-SHPE/images/beavs2.png" active={2 === slideIndex}/>
                         <Description active={2 === slideIndex}>GO BEAVS!</Description>
-                        <Link to="/about">
+                        <Link to="/OSU-SHPE/about" onClick={scrollToTop}>
                             <SlideButton active={2 === slideIndex}>GET STARTED</SlideButton>
                         </Link>
                     </SlideContainer>
                 </Slide>
                 <Slide>
-                    <SlideImage src="/images/officers.png"/>
+                    <SlideImage src="/OSU-SHPE/images/officers.png"/>
 
                     <SlideContainer>
                         <SlideTitle active={0 === slideIndex}>GET TO KNOW THE TEAM</SlideTitle>
                         <Description active={0 === slideIndex}>2023-2024 SHPE BOARD</Description>
-                        <Link to="/officers">
+                        <Link to="/OSU-SHPE/officers" onClick={scrollToTop}>
                             <SlideButton active={0 === slideIndex}>SEE OFFICERS</SlideButton>
                         </Link>
                     </SlideContainer>
                 </Slide>
 
                 <Slide>
-                    <SlideImage src="/images/border.png"/>
+                    <SlideImage src="/OSU-SHPE/images/border.png"/>
 
                     <SlideContainer>
                         <SlideTitle active={1 === slideIndex}>LATEST EVENTS</SlideTitle>
                         <Description active={1 === slideIndex}>STAY INVOLVED AND KEEP UP WITH US</Description>
-                        <Link to="/events">
+                        <Link to="/OSU-SHPE/events" onClick={scrollToTop}>
                             <SlideButton active={1 === slideIndex}>SEE EVENTS</SlideButton>
                         </Link>
                     </SlideContainer>

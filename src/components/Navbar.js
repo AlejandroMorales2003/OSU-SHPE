@@ -142,6 +142,15 @@ function Navbar() {
         showButton()
     }, []);
 
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+
+    function allOnClick() {
+        closeMobileMenu();
+        scrollToTop();
+    }
+
     /* checks for the size of the page to place the button */
     window.addEventListener('resize',showButton);
 
@@ -149,53 +158,53 @@ function Navbar() {
         <BarNav>
             <NavContainer>
                 <Left>
-                    <Links to="/" onClick={closeMobileMenu}>
-                        <SHPELogo src="/images/shpe.png"/>
+                    <Links to='/OSU-SHPE' onClick={allOnClick}>
+                        <SHPELogo src="/OSU-SHPE/images/shpe.png"/>
                     </Links>
                     <Bar>|</Bar>
-                    <OSULogo src="/images/osu.png"/>
+                    <OSULogo src="/OSU-SHPE/images/osu.png"/>
                 </Left>
                 
                 <Right>
                     <MenuList touch={click}>
                         <MenuItem touch={click}>
-                            <Links to="/" onClick={closeMobileMenu}>
+                            <Links to="/OSU-SHPE" onClick={allOnClick}>
                                 Home
                             </Links>
                         </MenuItem>
 
                         <MenuItem>
-                            <Links to="/about" onClick={closeMobileMenu}>
+                            <Links to="/OSU-SHPE/about" onClick={allOnClick}>
                                 About Us
                             </Links>
                         </MenuItem>
 
                         <MenuItem>
-                            <Links to="/officers" onClick={closeMobileMenu}>
+                            <Links to="/OSU-SHPE/officers" onClick={allOnClick}>
                                 Officers
                             </Links>
                         </MenuItem>
 
                         <MenuItem>
-                            <Links to="/events" onClick={closeMobileMenu}>
+                            <Links to="/OSU-SHPE/events" onClick={allOnClick}>
                                 Events
                             </Links>
                         </MenuItem>
 
                         <MenuItem>
-                            <Links to="/fundraisers" onClick={closeMobileMenu}>
-                                Fundraisers
+                            <Links to="/OSU-SHPE/calenders" onClick={allOnClick}>
+                                Calender
                             </Links>
                         </MenuItem>
 
                         <MenuItem>
-                            <Links to="/shpetinas" onClick={closeMobileMenu}>
+                            <Links to="/OSU-SHPE/shpetinas" onClick={allOnClick}>
                                 SHPEtinas
                             </Links>
                         </MenuItem>
                     </MenuList>
                 </Right>
-                <Hamburger src={click ? "/images/xmark.png":"/images/ham.png"} onClick={handleClick} dis={button}/>
+                <Hamburger src={click ? "/OSU-SHPE/images/xmark.png":"/OSU-SHPE/images/ham.png"} onClick={handleClick} dis={button}/>
 
             </NavContainer>    
         </BarNav>

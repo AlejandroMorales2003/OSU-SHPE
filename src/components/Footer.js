@@ -150,6 +150,10 @@ const SocialDescription = styled.p`
     font-size: 20px;
 `
 
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+
 const Footer = () => {
   return (
     <Container>
@@ -164,12 +168,12 @@ const Footer = () => {
         <Center>
             <CenterTitle>Guide!</CenterTitle>
             <List>
-                <ListItem to="/">Home</ListItem>
-                <ListItem to="/about">About Us</ListItem>
-                <ListItem to="/officers">Officers</ListItem>
-                <ListItem to="/events">Events</ListItem>
-                <ListItem to="/fundraisers">Fundraisers</ListItem>
-                <ListItem to="/shpetinas">SHPEtinas</ListItem>
+                <ListItem to="/OSU-SHPE" onClick={scrollToTop}>Home</ListItem>
+                <ListItem to="/OSU-SHPE/about" onClick={scrollToTop}>About Us</ListItem>
+                <ListItem to="/OSU-SHPE/officers" onClick={scrollToTop}>Officers</ListItem>
+                <ListItem to="/OSU-SHPE/events" onClick={scrollToTop}>Events</ListItem>
+                <ListItem to="/OSU-SHPE/calenders" onClick={scrollToTop}>Calender</ListItem>
+                <ListItem to="/OSU-SHPE/shpetinas" onClick={scrollToTop}>SHPEtinas</ListItem>
             </List>
         </Center>
 

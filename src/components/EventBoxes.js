@@ -87,7 +87,7 @@ function EventBoxes() {
                 </EventTextContainer>
 
                 <EventImageContainer>
-                    <EventImage src="/images/generalMeeting.png"/>
+                    <EventImage src="/OSU-SHPE/images/generalMeeting.png"/>
                 </EventImageContainer>
             </Event>
 
@@ -107,7 +107,7 @@ function EventBoxes() {
                 </EventTextContainer>
 
                 <EventImageContainer>
-                    <EventImage src="/images/raffle.png"/>
+                    <EventImage src="/OSU-SHPE/images/raffle.png"/>
                 </EventImageContainer>
             </Event>
     
@@ -127,7 +127,7 @@ function EventBoxes() {
                 </EventTextContainer>
 
                 <EventImageContainer>
-                    <EventImage src="/images/noches.png"/>
+                    <EventImage src="/OSU-SHPE/images/noches.png"/>
                 </EventImageContainer>
             </Event>
 

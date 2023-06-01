@@ -156,8 +156,8 @@ function AboutShpe() {
             <Container>
                 <Left active={effects}>
                     <Logos>
-                        <ShpeLogo src="/images/shpe.png"/>
-                        <NationalLogo src="/images/nationallogo.png"/>
+                        <ShpeLogo src="/OSU-SHPE/images/shpe.png"/>
+                        <NationalLogo src="/OSU-SHPE/images/nationallogo.png"/>
                     </Logos>
 
                     <ShpeTextContainer>

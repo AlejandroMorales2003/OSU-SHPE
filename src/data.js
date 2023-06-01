@@ -1,7 +1,7 @@
 export const Members2 = [
     {
         id: 1,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Dennise Alvarado",
         pos: "President",
         major: "Computer Science",
@@ -9,7 +9,7 @@ export const Members2 = [
     },
     {
         id: 2,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "German Juarez",
         pos: "Vice President",
         major: "Computer Science",
@@ -17,7 +17,7 @@ export const Members2 = [
     },
     {
         id: 3,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Christian Flores",
         pos: "Treasurer",
         major: "Computer Science",
@@ -25,7 +25,7 @@ export const Members2 = [
     },
     {
         id: 4,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Lesly Rojas",
         pos: "Secretary",
         major: "no sabo :(",
@@ -33,7 +33,7 @@ export const Members2 = [
     },
     {
         id: 5,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Omar Escobedo",
         pos: "Outreach",
         major: "no sabo :(",
@@ -41,7 +41,7 @@ export const Members2 = [
     },
     {
         id: 6,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Jorge Gonzalez",
         pos: "Recruitment Chair",
         major: "Electrical and Computer Engineer",
@@ -49,7 +49,7 @@ export const Members2 = [
     },
     {
         id: 7,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Baltazar Flug",
         pos: "Social Media Chair",
         major: "no sabo :(",
@@ -57,7 +57,7 @@ export const Members2 = [
     },
     {
         id: 8,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Andrea Campos",
         pos: "Fundraising Chair",
         major: "no sabo :(",
@@ -65,7 +65,7 @@ export const Members2 = [
     },
     {
         id: 9,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Ruby Canchola",
         pos: "Executive Board Member",
         major: "no sabo :(",
@@ -73,7 +73,7 @@ export const Members2 = [
     },
     {
         id: 10,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "America Pacheco",
         pos: "Executive Board Member",
         major: "Computer Science",
@@ -81,7 +81,7 @@ export const Members2 = [
     },
     {
         id: 11,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Eric Ruiz",
         pos: "Graduate Chair",
         major: "no sabo :(",
@@ -89,7 +89,7 @@ export const Members2 = [
     },
     {
         id: 12,
-        img: "/images/buddy.png",
+        img: "/OSU-SHPE/images/buddy.png",
         name: "Alejandro Morales",
         pos: "Ecampus Liason",
         major: "Computer Science",

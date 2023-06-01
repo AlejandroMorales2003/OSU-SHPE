@@ -98,9 +98,9 @@ function Quote() {
             <SmallOrangeCircle></SmallOrangeCircle>
             <NavyCircle></NavyCircle>
             <Header>
-                <SHPElogo src="/images/shpeLogo.png"/>
+                <SHPElogo src="/OSU-SHPE/images/shpeLogo.png"/>
                 <QuoteHeader> Quote of The Week</QuoteHeader>
-                <SHPElogo src="/images/shpeLogo.png"/>
+                <SHPElogo src="/OSU-SHPE/images/shpeLogo.png"/>
             </Header>
             <QuoteText>"Aprende del pasado, vive en el presente, y trabaja para el futuro"</QuoteText>
         </Container>

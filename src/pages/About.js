@@ -8,11 +8,11 @@ import Footer from "../components/Footer";
 function About() {
     return (
         <>
-            <BackgroundImage image="/images/bowling.png" tall="25vh"/>
+            <BackgroundImage image="/OSU-SHPE/images/bowling.png" tall="25vh"/>
             <AboutUs/>
-            <BackgroundImage image="/images/meeting2.png" tall="45vh"/>
+            <BackgroundImage image="/OSU-SHPE/images/meeting2.png" tall="45vh"/>
             <AboutShpe/>
-            <BackgroundImage image="/images/national3.png" tall="45vh"/>
+            <BackgroundImage image="/OSU-SHPE/images/national3.png" tall="45vh"/>
         </>
     )
 }

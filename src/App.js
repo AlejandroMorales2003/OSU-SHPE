@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import About from './pages/About.js';
 import Officers from './pages/Officers';
 import Events from './pages/Events';
-import Fundraisers from './pages/Fundraisers';
+import Calenders from './pages/Calenders';
 import Shpetinas from './pages/Shpetinas';
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/OSU-SHPE' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/officers' element={<Officers/>}/>
-        <Route path='/events' element={<Events/>}/>
-        <Route path='/fundraisers' element={<Fundraisers/>}/>
-        <Route path='/shpetinas' element={<Shpetinas/>}/>
+        <Route path='/OSU-SHPE/about' element={<About/>}/>
+        <Route path='/OSU-SHPE/officers' element={<Officers/>}/>
+        <Route path='/OSU-SHPE/events' element={<Events/>}/>
+        <Route path='/OSU-SHPE/calenders' element={<Calenders/>}/>
+        <Route path='/OSU-SHPE/shpetinas' element={<Shpetinas/>}/>
       </Routes>
       <Footer/>
     </Router>

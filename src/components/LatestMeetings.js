@@ -124,7 +124,7 @@ function LatestMeetings() {
 
             <MeetingContainer>
                 <MeetingImageContainer>
-                    <MeetingImage src="/images/springMeeting.png" active={effects}/>
+                    <MeetingImage src="/OSU-SHPE/images/springMeeting.png" active={effects}/>
                 </MeetingImageContainer>
                 <MeetingTextContainer active={effects}>
                     <MeetingTitle>SPRING TERM MEETING!</MeetingTitle>
