@@ -1,5 +1,29 @@
-import React from "react";
-import styled from "styled-components";
+import React, {useState,useEffect} from "react";
+import styled, {keyframes} from "styled-components";
+
+const SlideAndFadeLeft = keyframes`
+    from {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
+
+const SlideAndFadeRight = keyframes`
+    from {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
 
 const Container = styled.div`
     background-color: #ED5D29;
@@ -24,6 +48,11 @@ const EventTextContainer = styled.div`
     flex: 1;
     width: 750px;
     //display: flex;
+
+    ${props => props.active} {
+        animation-name: ${SlideAndFadeLeft};
+        animation-duration: 1s;
+    }
 `
 
 const EventHeader = styled.h1`
@@ -55,6 +84,11 @@ const EventImageContainer = styled.div`
     flex: 1;
     width: 750px;
     overflow: hidden;
+
+    ${props => props.active} {
+        animation-name: ${SlideAndFadeRight};
+        animation-duration: 1s;
+    }
 `;
 
 const EventImage = styled.img`
@@ -65,10 +99,31 @@ const EventImage = styled.img`
 `
 
 function EventBoxes() {
+    const [offset, setOffset] = useState(0);
+    const [effects,setEffects] = useState(true);
+
+    const onScroll = () => {setOffset(window.pageYOffset)};
+   
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () => {
+          window.removeEventListener("scroll", onScroll);
+        };
+      }, []);
+
+    useEffect(() => {
+        if (offset > 100) {
+          setEffects(false);
+        } else {
+          setEffects(true);
+        }
+        console.log(offset)
+    }, [offset]);
+
     return (
         <>
         <Container>
-
 
             {/* GENERAL MEETINGS */}
             <Event>
@@ -113,7 +168,7 @@ function EventBoxes() {
     
             {/* OUTREACH */}
             <Event>
-                <EventTextContainer>
+                <EventTextContainer active={effects}>
                     <EventHeader>Outreach</EventHeader>
                     <EventSubHeader>Why we do it?</EventSubHeader>
                     <EventDescription> We understand that sparking interest in STEM for young Hispanic will create leaders of the future.
@@ -126,7 +181,7 @@ function EventBoxes() {
                     </EventDescription>
                 </EventTextContainer>
 
-                <EventImageContainer>
+                <EventImageContainer active={effects}>
                     <EventImage src="/OSU-SHPE/images/noches.png"/>
                 </EventImageContainer>
             </Event>

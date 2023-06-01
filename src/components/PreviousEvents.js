@@ -1,6 +1,18 @@
-import React from "react";
-import styled from "styled-components";
+import React, {useEffect,useState} from "react";
+import styled, {keyframes} from "styled-components";
 import {EventImages} from "../data"
+
+const FlipSlide = keyframes`
+    from {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform:translate(0);
+    }
+`;
 
 const Container = styled.div`
     width: 100%;
@@ -15,9 +27,6 @@ const Title = styled.h1`
     border-bottom: 5px solid #ED5D29;
 `;
 const EventContainer = styled.div`
-//margin-top: 20px;
-    //background-color: white;
-    //height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -28,24 +37,46 @@ const Images = styled.img`
     max-height: 550px;
     max-width: 600px;
     border: 5px solid #ED5D29;
+
+    ${props => props.active} {
+        animation-name: ${FlipSlide};
+        animation-duration: 1s;
+    }
 `;
 
 
 function PreviousEvents() {
+    const [offset, setOffset] = useState(0);
+    const [effects,setEffects] = useState(true);
+
+    const onScroll = () => {setOffset(window.pageYOffset)};
+   
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () => {
+          window.removeEventListener("scroll", onScroll);
+        };
+      }, []);
+
+    useEffect(() => {
+        if (offset > 800) {
+          setEffects(false);
+        } else {
+          setEffects(true);
+        }
+        console.log(offset)
+    }, [offset]);
+
+
     return(
         <>
         <Container>
             <Title>Past Events</Title>
             <EventContainer>
                 {EventImages.map((item) => (
-                    <Images src={item.img}/>
+                    <Images src={item.img} active={effects}/>
                 ))}
-                {/* <Images src="/OSU-SHPE/images/gala.png"/>
-                <Images src="/OSU-SHPE/images/deacon.png"/>
-                <Images src="/OSU-SHPE/images/bowlingEve.png"/>
-                <Images src="/OSU-SHPE/images/gradschool.png"/>
-                <Images src="/OSU-SHPE/images/shpegiving.png"/>
-                <Images src="/OSU-SHPE/images/studysesh.png"/> */}
             </EventContainer>
         </Container>
         </>
