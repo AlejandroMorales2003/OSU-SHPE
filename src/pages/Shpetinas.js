@@ -1,9 +1,10 @@
 import React from "react";
+import AboutTinas from "../components/AboutTinas";
 
 function Shpetinas() {
     return (
         <>
-            <p style={{fontSize:"50px"}}>THIS WILL BE THE SHPETINAS PAGE</p>
+            <AboutTinas/>
         </>
     )
 }
